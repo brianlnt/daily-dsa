@@ -4,13 +4,17 @@ class IsSubsequence392 {
          * Time: O(m+n)
          * Space: O(1)
          */
-        int check = 0;
-        for(int i = 0; i < s.length(); i++){
-            for(int j = 0; j < t.length(); j++){
-                if(s.charAt(i) == t.charAt(j)) check += 1;
+        int sp = 0;
+        int tp = 0;
+
+        while (sp < s.length() && tp < t.length()) {
+            if (s.charAt(sp) == t.charAt(tp)) {
+                sp++;
             }
+            tp++;
         }
-        return check == s.length() ? true:false;
+
+        return sp == s.length();    
     }
 
     public static void main(String[] args) {
