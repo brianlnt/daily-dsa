@@ -31,6 +31,19 @@ public class FaultyKeyboard2810 {
         return new String(result);
     }
 
+    public static String finalString2(String s) {
+        StringBuilder result = new StringBuilder();
+
+        for(int i = 0; i < s.length(); i++){
+            if(s.charAt(i) == 'i'){
+                result = result.reverse();
+            } else {
+                result.append(s.charAt(i));
+            }
+        }
+        return new String(result);
+    }
+
     public static void main(String[] args) {
         System.out.println(finalString("string"));
         System.out.println(finalString("poiinter"));
