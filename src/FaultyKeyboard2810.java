@@ -47,5 +47,6 @@ public class FaultyKeyboard2810 {
     public static void main(String[] args) {
         System.out.println(finalString("string"));
         System.out.println(finalString("poiinter"));
+        System.out.println(10e4 - Integer.MIN_VALUE);
     }
 }
