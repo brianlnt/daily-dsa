@@ -20,7 +20,7 @@ public class RemovePalindromicSubsequences1332 {
     public static int removePalindromeSub1(String s) {
         /*
          * Time: O(n)
-         * Space: O(n)
+         * Space: O(1)
          */
         
         if(s.isEmpty()) return 0;
@@ -44,8 +44,8 @@ public class RemovePalindromicSubsequences1332 {
     }
     
     public static void main(String[] args) {
-        System.out.println(removePalindromeSub("ababa"));
-        System.out.println(removePalindromeSub("abb"));
-        System.out.println(removePalindromeSub("baabb"));
+        System.out.println(removePalindromeSub1("ababa"));
+        System.out.println(removePalindromeSub1("abb"));
+        System.out.println(removePalindromeSub1("baabb"));
     }
 }
