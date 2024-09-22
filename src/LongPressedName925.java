@@ -1,16 +1,26 @@
 class LongPressedName925{
-    public boolean isLongPressedName(String name, String typed) {
+    public static boolean isLongPressedName(String name, String typed) {
+        /*
+         * Time: O(n)
+         * Space: O(1)
+         */
         int i = 0;
-        int j = 0;
-
-        while(i< name.length() && j < typed.length()){
-            if(name.charAt(i) == typed.charAt(j)) {
-                j++;
-            } else {
+        for(int j = 0; j < typed.length(); j++){
+            if(i < name.length() && name.charAt(i) == typed.charAt(j)){
                 i++;
-                if(name.charAt(i) == typed.charAt(j-1)) return false;
+            } else if (j == 0 || typed.charAt(j) != typed.charAt(j - 1)){
+                return false;
             }
         }
-        return true;
+        return i == name.length();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isLongPressedName("alex", "aaleex"));
+        System.out.println(isLongPressedName("saeed", "ssaaedd"));
+        System.out.println(isLongPressedName("leelee", "lleeelee"));
+        System.out.println(isLongPressedName("a", "b"));
+        System.out.println(isLongPressedName("vtkgn", "vttkgnn"));
+        System.out.println(isLongPressedName("alexd", "ale"));
     }
 }
