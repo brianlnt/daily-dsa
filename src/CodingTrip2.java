@@ -1,0 +1,2 @@
+public class CodingTrip2 {
+}
