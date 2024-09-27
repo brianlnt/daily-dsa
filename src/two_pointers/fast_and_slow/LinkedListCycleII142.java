@@ -12,14 +12,14 @@ public class LinkedListCycleII142 {
         Time: O(n)
         Space: O(n)
         */
-         Set<ListNode> set = new HashSet<ListNode>();
+        Set<ListNode> set = new HashSet<ListNode>();
 
-         while(head != null){
-             if(set.contains(head)) return head;
-             set.add(head);
-             head = head.next;
-         }
-         return null;
+        while(head != null){
+            if(set.contains(head)) return head;
+            set.add(head);
+            head = head.next;
+        }
+        return null;
     }
 
     public static ListNode detectCycle1(ListNode head) {
