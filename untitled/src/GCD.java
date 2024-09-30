@@ -15,14 +15,14 @@ public class GCD {
          */
         while(b != 0){
             int temp = b;
-            b = a % temp;
+            b = a % b;
             a = temp;
         }
         return a;
     }
 
     public static void main(String[] args) {
-        System.out.println(gcd(36, 16));
-        System.out.println(gcd1(36, 16));
+        System.out.println(gcd(600, 136));
+        System.out.println(gcd1(136, 600));
     }
 }
