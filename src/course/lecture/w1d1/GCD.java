@@ -1,4 +1,4 @@
-package course.lecture1;
+package course.lecture.w1d1;
 
 public class GCD {
     public static int gcd(int a, int b) {

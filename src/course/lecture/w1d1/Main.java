@@ -1,4 +1,4 @@
-package course.lecture1;
+package course.lecture.w1d1;
 
 public class Main {
     public static void main(String[] args) {

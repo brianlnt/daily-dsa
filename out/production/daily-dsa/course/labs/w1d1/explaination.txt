@@ -1,3 +1,10 @@
+Problem1:
+Intuition: Using two queue to implement the stack
+Push: The new element is always added to the rear of queue q1 and it is kept as top stack element
+Pop: We need to remove the element from the top of the stack. This is the last inserted element in q1.
+Top: Check if stack is empty, then return -1 else return top
+Empty: Check size of stack
+
 Problem 2:
 Given:
     - head of single linked list
