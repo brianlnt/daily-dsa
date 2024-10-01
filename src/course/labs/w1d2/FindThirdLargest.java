@@ -13,16 +13,21 @@ public class FindThirdLargest {
 
         for(int i = 0; i < a.length; i++){
             if(a[i] > firstMax) firstMax = a[i];
-            for(int j = i + 1; j < a.length; j++){
-                if(a[j] > firstMax) secondMax = a[j];
-                for(int k = j + 1; k < a.length; k++){
-                    if(a[k] > secondMax) thirdMax = a[k];
-                }
-            }
+        }
+        for(int i = 0; i < a.length; i++){
+            if(a[i] > secondMax && a[i] != firstMax) secondMax = a[i];
+        }
+        for(int i = 0; i < a.length; i++){
+            if(a[i] > thirdMax && a[i] != firstMax && a[i] != secondMax) thirdMax = a[i];
         }
         return thirdMax;
     }
 
+    public static int f2(int[] a){
+        return 1;
+    }
+
     public static void main(String[] args) {
-        System.out.println(f1(new int[]{7, 20, 18, 4, 20, 19, 20, 3}));
+        System.out.println(f1(new int[]{1,2,3,4,5,6}));
     }}
+
