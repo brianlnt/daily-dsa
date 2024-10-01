@@ -24,3 +24,9 @@ Approach 2: Recursive
     Space: O(n) because each recursive is pushed into the call stack. The recursion could go
     up to n level deep.
 
+Problem 3:
+Given:
+    - two strings s, t
+    - return true if t is an anagram of s, false otherwise
+
+
