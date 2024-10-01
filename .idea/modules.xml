@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/untitled/algorithms.iml" filepath="$PROJECT_DIR$/untitled/algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/daily-dsa.iml" filepath="$PROJECT_DIR$/daily-dsa.iml" />
     </modules>
   </component>

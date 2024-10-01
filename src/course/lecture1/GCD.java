@@ -1,3 +1,5 @@
+package course.lecture1;
+
 public class GCD {
     public static int gcd(int a, int b) {
         /*
