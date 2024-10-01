@@ -29,4 +29,19 @@ Given:
     - two strings s, t
     - return true if t is an anagram of s, false otherwise
 
+Intuition:
+    - Input: "anagram", "nagaram"
+    - Output: true
+
+    - Input: "rat", "cat"
+    - Output: false
+
+    An anagram is produced by rearranging the letters of s into t.
+    Therefore, if t is an anagram of s, sorting both strings will result in two identical strings.
+    Furthermore, if s and t have different lengths, t must not be an anagram of s and
+    we can return early.
+
+Complexity Analysis:
+Time: O(nlogn) because of sorting algorithm
+Space: O(n)
 
