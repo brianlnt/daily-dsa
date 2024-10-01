@@ -1,0 +1,26 @@
+Problem 2:
+Given:
+    - head of single linked list
+    - # of node [0, 5000]
+    - -5000 <= Node.val <= 5000
+
+Approach 1: Iterative
+Intuition:
+    Assume we have 1->2->3->4->5->null, we would like to change it to 5->4->3->2->1->null
+    1->2->null , 2->1->null
+    [] , []
+
+    While traversing the list, we can change the current node's next pointer to point to
+    its previous element. Because a node does not have reference to its previous node, so we need
+    to store its previous node beforehand. We also need to store the next node before changing
+    the reference. Finally, we return the new head reference.
+
+Complexity Analysis:
+    Time: O(n) because we need to traverse all the element of the list
+    Space: O(1), we dont use any extra space
+
+Approach 2: Recursive
+    Time: O(n)
+    Space: O(n) because each recursive is pushed into the call stack. The recursion could go
+    up to n level deep.
+
