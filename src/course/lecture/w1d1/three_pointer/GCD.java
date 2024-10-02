@@ -1,4 +1,4 @@
-package course.lecture.w1d1;
+package course.lecture.w1d1.three_pointer;
 
 public class GCD {
     public static int gcd(int a, int b) {

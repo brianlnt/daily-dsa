@@ -1,4 +1,4 @@
-package course.lecture.w1d1;
+package course.lecture.w1d1.three_pointer;
 
 public class Fibonacci {
     public static int fibonacci(int n) {
