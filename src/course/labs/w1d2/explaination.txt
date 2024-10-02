@@ -56,7 +56,7 @@ FindThirdLargest(A)
     return A[-3]          2
                    total: nlog(n) + 2 => O(nlog(n))
 
-=> Algorithm 3 > Algorithm 1 ~ Algorithm 2
+=> Algorithm 1 ~ Algorithm 2 > Algorithm 3
 
 Question 2:
 
