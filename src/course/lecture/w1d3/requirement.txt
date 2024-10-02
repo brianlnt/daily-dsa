@@ -1,0 +1,15 @@
+Consecutive Sum
+Write two or more Algorithms to compute consecutive sums. Determine their time  and space complexities.
+
+Given an integer array A[0 .. n-1] and a positive integer k <= n, return an array ConsecutiveSum with following property:
+ConsecutiveSum[0] = A[0] + A[1] + ... + A[k-1],
+ConsecutiveSum[1] = A[1] + A[2] + ... + A[k],
+and so on.
+
+81 Coins Problem
+Prof. Prem gave you 81 coins. All of them look alike. However, exactly one has lesser weight.
+
+Write an algorithm to identify the coin with lesser weight. You are given a "Mechanical Scale".
+Your algorithm can use the scale at most FOUR times.
+
+What is the time complexity (Assume one use of the scale is O(1)).
