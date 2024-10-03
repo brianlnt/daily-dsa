@@ -1,4 +1,0 @@
-Pattern 2 : Two pointers
-Check a String is a palindrome
-Check an integer array is a palindrome
-Check elements of either side from the midpoint of an integer array have the same parity.
