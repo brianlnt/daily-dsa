@@ -66,8 +66,8 @@ public class FindThirdLargest {
     }
 
     public static void main(String[] args) {
-        int[] array = {7, 20, 18, 4, 20, 19, 20, 3};
-//        int[] array = {1,5,4,7,3,9,2};
+//        int[] array = {7, 20, 18, 4, 20, 19, 20, 3};
+        int[] array = {1,5,4,7,3,9,2};
 
         long startTime1 = System.nanoTime();
         int thirdLargest1 = FindThirdLargest.f1(array);
