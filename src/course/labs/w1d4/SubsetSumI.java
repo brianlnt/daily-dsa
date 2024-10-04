@@ -3,7 +3,7 @@ package course.labs.w1d4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class P1 {
+public class SubsetSumI {
     /*
     Write a Java program to solve the subset problem.
         (a) T or F.

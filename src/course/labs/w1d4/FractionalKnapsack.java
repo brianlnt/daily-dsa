@@ -2,7 +2,7 @@ package course.labs.w1d4;
 
 import java.util.Arrays;
 
-public class P4 {
+public class FractionalKnapsack {
     // A class to represent an item with its value, weight, and value-to-weight ratio
     static class Item {
         int value, weight;

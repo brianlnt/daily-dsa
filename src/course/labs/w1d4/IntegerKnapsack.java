@@ -3,7 +3,7 @@ package course.labs.w1d4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class P3 {
+public class IntegerKnapsack {
 
     public static void knapsack(int[] values, int[] weights, int W_max) {
         int n = values.length;
