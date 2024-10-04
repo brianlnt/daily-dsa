@@ -72,8 +72,40 @@ public class P1 {
 
     }
 
+    static List<List<Integer>> subsetSumC(int[] a, int k) {
+        int n = a.length;
+
+        List<List<Integer>>[][] dp = new ArrayList[n + 1][k + 1];
+
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= k; j++) {
+                dp[i][j] = new ArrayList<>();
+            }
+        }
+
+        dp[0][0].add(new ArrayList<>());
+
+        for (int i = 1; i <= n; i++) {
+            int currentElement = a[i - 1];
+            for (int j = 0; j <= k; j++) {
+                dp[i][j].addAll(dp[i - 1][j]);
+
+                if (j >= currentElement) {
+                    for (List<Integer> subset : dp[i - 1][j - currentElement]) {
+                        List<Integer> newSubset = new ArrayList<>(subset);
+                        newSubset.add(currentElement);
+                        dp[i][j].add(newSubset);
+                    }
+                }
+            }
+        }
+
+        return dp[n][k];
+    }
+
     public static void main(String[] args) {
         System.out.println(subsetSumA(new int[]{2,3,5}, 8));
-        System.out.println(subsetSumB(new int[]{2,3,5}, 8));
+        System.out.println(subsetSumB(new int[]{2,3,5}, 5));
+        subsetSumC(new int[]{2,3,5}, 5).forEach(System.out::println);
     }
 }
