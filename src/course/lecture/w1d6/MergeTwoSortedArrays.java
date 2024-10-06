@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class MergeTwoSortedArrays {
     /*
+    88. Merge sorted array (https://leetcode.com/problems/merge-sorted-array/description/)
     Input A = {5, 8, 10, 15, 0, 0, 0}
           B = {2, 12, 25}
     Return  {2, 5, 8, 10, 12, 15, 25}
