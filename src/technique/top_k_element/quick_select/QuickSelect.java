@@ -35,6 +35,11 @@ public class QuickSelect {
 
     public static int quickSelect(int[] a, int k){
         return quickSelectHelper(a, 0, a.length - 1, k);
+
+        /*
+        Time: O(n)
+        Space: O(1)
+         */
     }
 
     public static void main(String[] args) {

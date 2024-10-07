@@ -66,9 +66,9 @@ public class ThirdMaxNumber414 {
     }
 
     public static void main(String[] args) {
-        System.out.println(thirdMax2(new int[]{4,4,2,5,3,1}));
-        System.out.println(thirdMax2(new int[]{2,2,3,1}));
-        System.out.println(thirdMax2(new int[]{3,1}));
+        System.out.println(thirdMax2(new int[]{4,4,2,5,3,1})); //1,2,3,4,4,5
+        System.out.println(thirdMax2(new int[]{2,2,3,1}));//1,2,2,3
+        System.out.println(thirdMax2(new int[]{3,1}));//1,3
     }
 
 }

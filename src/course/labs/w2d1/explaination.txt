@@ -1,0 +1,79 @@
+Question 1: Design and Analysis of the Algorithms
+(a) For an array of "Wooden blocks toys" with two colors: Blue and Red:
+
+Approach: Use a variation of the two-pointer technique.
+Algorithm:
+    Initialize two pointers: left at the beginning (index 0) and right at the end (last index) of the array.
+    While left is less than right:
+        If the toy at left is Blue, move the left pointer to the right.
+        If the toy at right is Red, move the right pointer to the left.
+        If the toy at left is Red and the toy at right is Blue, swap them and move both pointers inward.
+Time Complexity: O(n), where n is the size of the array.
+Space Complexity: O(1) (in-place sorting).
+
+(b) For three different colors: Blue, Red, and Green:
+
+Approach: Use the Dutch National Flag problem solution.
+Algorithm:
+    Initialize three pointers: low (start of the array), mid (traversing pointer), and high (end of the array).
+    While mid <= high:
+        If the toy at mid is Blue, swap it with the toy at low and increment both low and mid.
+        If the toy at mid is Red, move the mid pointer to the right.
+        If the toy at mid is Green, swap it with the toy at high and decrement high.
+Time Complexity: O(n).
+Space Complexity: O(1) (in-place sorting).
+
+(c) For four different colors: Blue, Red, Green, and Yellow:
+
+Approach: Extend the Dutch National Flag problem to handle four partitions.
+Algorithm:
+    Use four pointers: p1 (Blue), p2 (Red), p3 (Green), and p4 (Yellow).
+    Traverse through the array, adjusting the positions by moving toys to the correct regions.
+Time Complexity: O(n).
+Space Complexity: O(1) (in-place sorting).
+
+Question 2:
+(a) {1, 2, 3, 4, 5, 6, 7, 8, 9}
+Good self call (L, G < 3n/4): 3,4,5,6,7
+Bad self call (L, G >= 3n/4): 1,2,8,9
+
+(b) {8, 7, 6, 5, 4, 3, 2, 1, 9}
+Good self call (L, G < 3n/4): 6,5,4,3,2
+Bad self call (L, G >= 3n/4): 8,7,1,9
+
+(c) {9, 1, 8, 2, 7, 3, 6, 4, 5}
+Good self call (L, G < 3n/4): 8,2,7,3,6
+Bad self call (L, G >= 3n/4): 9,1,4,5
+
+(d) {5, 1, 4, 2, 3, 9, 7, 6, 8}
+Good self call (L, G < 3n/4): 4,2,3,9,7
+Bad self call (L, G >= 3n/4): 5,1,6,8
+
+Question 3:
+(a) {1, 2, 3, 4, 5, 6, 7, 8, 9} k = 5
+Good self call (L, G < 3n/4): 3,4,5,6,7
+Bad self call (L, G >= 3n/4): 1,2,8,9
+
+(b) {8, 7, 6, 5, 4, 3, 2, 1, 9} k = 3
+Good self call (L, G < 3n/4): 6,5,4,3,2
+Bad self call (L, G >= 3n/4): 8,7,1,9
+
+(c) {9, 1, 8, 2, 7, 3, 6, 4, 5} k = 8
+Good self call (L, G < 3n/4): 8,2,7,3,6
+Bad self call (L, G >= 3n/4): 9,1,4,5
+
+(d) {5, 1, 4, 2, 3, 9, 7, 6, 8} k = 5
+Good self call (L, G < 3n/4): 4,2,3,9,7
+Bad self call (L, G >= 3n/4): 5,1,6,8
+
+Question 4:
+	1. Height of the Recursion Tree:
+		○ If every self-call is good (i.e., all partitions are balanced with sizes less than 2n3\frac{2n}{3}32n​),
+		the height of the recursion tree is determined by the sequence:
+		    n, 2n/3, (2/3)^2 n,..., 1, 0
+		○ The length of this path is: log2/3(n) + 1
+		○ This implies that the height is O(log(n)).
+	2. Total Running Time:
+		○ At each level of the recursion tree, the processing time is O(n).
+		○ Therefore, the total running time for the good case is: O(n*log(n))
+
