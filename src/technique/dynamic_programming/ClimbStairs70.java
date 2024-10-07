@@ -63,9 +63,36 @@ public class ClimbStairs70 {
          */
     }
 
+    public static int climbStart4(int n){
+        /*
+        Approach: Fibonacci (Bottom-up-without-extra-space)
+         */
+
+        if(n < 2) return n;
+
+        int f0 = 0;
+        int f1 = 1;
+        int fibo = 0;
+        for(int i = 2; i <= n + 1; i++){
+            fibo = f0 + f1;
+            f0 = f1;
+            f1 = fibo;
+        }
+
+        return fibo;
+
+        /*
+        Time: O(n)
+        Space: O(1)
+         */
+    }
+
+
+
     public static void main(String[] args) {
-        System.out.println(climbStart1(44));
-        System.out.println(climbStart2(44));
-        System.out.println(climbStart3(44));
+        System.out.println(climbStart1(5));
+        System.out.println(climbStart2(5));
+        System.out.println(climbStart3(5));
+        System.out.println(climbStart4(5));
     }
 }
