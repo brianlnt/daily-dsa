@@ -1,7 +1,7 @@
 Question 1: Design and Analysis of the Algorithms
 (a) For an array of "Wooden blocks toys" with two colors: Blue and Red:
 
-Approach: Use a variation of the two-pointer technique.
+Approach: Use a variation of the two-pointer algorithms.
 Algorithm:
     Initialize two pointers: left at the beginning (index 0) and right at the end (last index) of the array.
     While left is less than right:
