@@ -22,3 +22,13 @@ Every comparison-based sorting algorithm has at least one worst case which runni
 n = 4 => n*log(n) = 8 > 5 => It does not violate the theoretical lower bound.
 
 Question 3:
+1. Sort input array
+2. Create an array with the same length of input array
+2. Using two pointers approach:
+    start pointer start from beginning
+    end pointer start from end of the array
+3. Traversing through the array
+    Fill even index from the start pointer (lower values)
+    Fill odd index from the end pointer (higher values)
+4. Copy the rearranged elements back into the original array
+5. Return input array
