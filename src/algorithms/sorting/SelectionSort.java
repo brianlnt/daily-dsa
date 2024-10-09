@@ -3,6 +3,14 @@ package algorithms.sorting;
 import java.util.Arrays;
 
 public class SelectionSort {
+    /*
+    Select the minimum element from the array and place it at the beginning:
+    - Start with the First element as the current position.
+    - Find the Minimum element in the Remaining Array.
+    - Swap the Smallest element with the element at the current position.
+    - Move to the next element (the new starting position) and repeat the process for the unsorted part of the array.
+    - When you reach the end of the array, the array is completely sorted.
+     */
     public static void sort(int[] a){
         for(int i = 0; i < a.length - 1; i++){
             int min_index = i;

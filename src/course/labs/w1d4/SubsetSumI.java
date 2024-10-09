@@ -104,8 +104,8 @@ public class SubsetSumI {
     }
 
     public static void main(String[] args) {
-        System.out.println(subsetSumA(new int[]{2,3,5}, 8));
-        System.out.println(subsetSumB(new int[]{2,3,5}, 5));
+//        System.out.println(subsetSumA(new int[]{2,3,5}, 8));
+//        System.out.println(subsetSumB(new int[]{2,3,5}, 5));
         subsetSumC(new int[]{2,3,5}, 5).forEach(System.out::println);
     }
 }
